@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# 에어비앤비 클론
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+에어비앤비(Airbnb)의 모바일 버전을 클론합니다.
 
-## Available Scripts
+## 기술 스택
 
-In the project directory, you can run:
+이 프로젝트에 사용된 기술은 다음과 같습니다.
 
-### `npm start`
+- Language: HTML, CSS, SCSS, Javascript
+- Library: React, Classnames, React-Router-Dom
+- Project Setup: CRA(Create-React-App)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 설치 및 실행
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```text
+$ git clone https://github.com/junjangsee/react-airbnb-clone.git
+$ cd react-airbnb-clone
+$ npm i
+$ npm run start
+```
 
-### `npm test`
+## 프로젝트 구조
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```text
+.
++-- .github (깃헙 관련 파일)
+|   +-- PULL_REQUEST_TEMPLATE.md
++-- public
+|   +-- index.html
++-- src
+|   +-- components (페이지를 구성하는 컴포넌트 구성)
+|   |   +-- folders (컴포넌트)
+|   |   |   +-- *.jsx
+|   |   +-- *.jsx
+|   +-- containers (페이지 내 데이터를 처리하는 컨테이너 컴포넌트 구성)
+|   |   +-- *.jsx
+|   +-- images (페이지에서 사용되는 이미지들)
+|   +-- pages (라우팅 단위 페이지 구성)
+|   |   +-- *.jsx
+|   +-- shared (프로젝트 종속이 아니라 공통으로 사용되는 파일 구성)
+|   |   +-- __mocks__ (프로젝트에 사용되는 임시 데이터들 모음)
+|   |   |   +-- *.jsx
+|   +-- App.jsx
+|   +-- index.css
+|   +-- index.js
+.
+```
 
-### `npm run build`
+## 작업 내용
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Issues](https://github.com/junjangsee/react-instagram-clone/issues?q=is%3Aissue+is%3Aclosed)
+- [Pull Requests](https://github.com/junjangsee/react-instagram-clone/issues?q=is%3Apr+is%3Aclosed)
