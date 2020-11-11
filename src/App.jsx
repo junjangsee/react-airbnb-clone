@@ -1,7 +1,8 @@
 import './App.css';
+import RoomDetailPage from './pages/RoomDetailPage';
 
 function App() {
-  return <div>setUp</div>;
+  return <RoomDetailPage />;
 }
 
 export default App;
