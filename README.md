@@ -48,5 +48,5 @@ $ npm run start
 
 ## 작업 내용
 
-- [Issues](https://github.com/junjangsee/react-instagram-clone/issues?q=is%3Aissue+is%3Aclosed)
-- [Pull Requests](https://github.com/junjangsee/react-instagram-clone/issues?q=is%3Apr+is%3Aclosed)
+- [Issues](https://github.com/junjangsee/react-airbnb-clone/issues)
+- [Pull Requests](https://github.com/junjangsee/react-airbnb-clone/pulls)
