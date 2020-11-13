@@ -1,0 +1,19 @@
+.description-container {
+  .description {
+    margin: 0 0 32px 0;
+
+    .content {
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .to-host {
+    font-weight: 600;
+
+    a {
+      color: #222222;
+    }
+  }
+}

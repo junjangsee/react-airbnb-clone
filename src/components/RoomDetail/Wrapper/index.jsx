@@ -4,7 +4,7 @@ import Container from '../../Container';
 import classNames from 'classnames';
 
 const Wrapper = ({ className, children }) => {
-  const classProps = classNames(style['contents'], className);
+  const classProps = classNames(style['contents'], style[`${className}`]);
 
   return (
     <>

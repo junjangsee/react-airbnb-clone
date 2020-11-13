@@ -7,6 +7,7 @@ import SpecialPrice from '../../components/RoomDetail/SpecialPrice';
 import Title from '../../components/RoomDetail/Title';
 import rooms from '../../shared/__mocks__/rooms';
 import roomInfos from '../../shared/__mocks__/roomInfos';
+import Description from '../../components/RoomDetail/Description';
 
 const RoomDetailContainer = () => {
   return (
@@ -15,11 +16,12 @@ const RoomDetailContainer = () => {
       <Title />
       <SpecialPrice />
       <HostInfo />
-      <Wrapper>
+      <Wrapper className='contents-padding'>
         {roomInfos.map((info, index) => (
           <RoomInfo key={index} {...info} />
         ))}
       </Wrapper>
+      <Description />
     </>
   );
 };
