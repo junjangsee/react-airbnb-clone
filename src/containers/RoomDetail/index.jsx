@@ -1,5 +1,6 @@
 import React from 'react';
 import Carousel from '../../components/Carousel';
+import SpecialPrice from '../../components/RoomDetail/SpecialPrice';
 import Title from '../../components/RoomDetail/Title';
 import rooms from '../../shared/__mocks__/rooms';
 
@@ -8,6 +9,7 @@ const RoomDetailContainer = () => {
     <>
       <Carousel images={rooms} />
       <Title />
+      <SpecialPrice />
     </>
   );
 };
