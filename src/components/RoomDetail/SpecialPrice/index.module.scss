@@ -1,5 +1,16 @@
 .special-wrapper {
+  display: flex;
+
   .special-container {
-    padding: 0 24px 0 24px;
+    display: flex;
+
+    .description {
+      h1 {
+        display: inline;
+        margin: 0 8px 0 0;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
   }
 }
