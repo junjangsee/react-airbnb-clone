@@ -7,7 +7,9 @@ import SpecialPrice from '../../components/RoomDetail/SpecialPrice';
 import Title from '../../components/RoomDetail/Title';
 import rooms from '../../shared/__mocks__/rooms';
 import roomInfos from '../../shared/__mocks__/roomInfos';
+import bedCase from '../../shared/__mocks__/bedCase';
 import Description from '../../components/RoomDetail/Description';
+import BedCase from '../../components/RoomDetail/BedCase';
 
 const RoomDetailContainer = () => {
   return (
@@ -22,6 +24,7 @@ const RoomDetailContainer = () => {
         ))}
       </Wrapper>
       <Description />
+      <BedCase bedCase={bedCase} />
     </>
   );
 };

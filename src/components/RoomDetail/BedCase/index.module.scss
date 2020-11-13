@@ -1,0 +1,42 @@
+.bed-container {
+  display: flex;
+  flex-direction: column;
+
+  .bed-case {
+    padding: 0 0 24px 0;
+
+    h2 {
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
+
+  .case-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .card-container {
+      width: 48.3%;
+
+      .card {
+        .case-container {
+          padding: 24px 16px 24px 16px;
+
+          .icon {
+            margin: 0 0 23px 0;
+          }
+
+          .place {
+            font-size: 16px;
+            font-weight: 600;
+          }
+
+          .description {
+            color: #717171;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
