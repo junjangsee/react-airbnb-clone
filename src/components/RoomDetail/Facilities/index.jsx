@@ -14,8 +14,8 @@ const Facilities = ({ facilities }) => {
             <Text tag='h2'>편의시설</Text>
           </Container>
           <Container className={style['facilities']}>
-            {facilities.map((item) => (
-              <Container className={style['list']}>
+            {facilities.map((item, index) => (
+              <Container key={index} className={style['list']}>
                 <Container className={style['description']}>
                   {item.description}
                 </Container>
