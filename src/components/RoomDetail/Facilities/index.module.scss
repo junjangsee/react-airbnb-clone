@@ -1,0 +1,42 @@
+.facilities-container {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    padding: 0 0 24px 0;
+
+    h2 {
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
+
+  .facilities {
+    display: flex;
+    flex-direction: column;
+
+    .list {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0 16px 0;
+    }
+  }
+
+  .detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0 0 0;
+    padding: 13px 23px 13px 23px;
+
+    border: 1px solid rgb(34, 34, 34);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+
+    a {
+      color: rgb(34, 34, 34);
+      text-decoration: none;
+    }
+  }
+}
