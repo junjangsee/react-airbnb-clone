@@ -2,6 +2,7 @@ import React from 'react';
 import rooms from '../../shared/__mocks__/rooms';
 import roomInfos from '../../shared/__mocks__/roomInfos';
 import bedCase from '../../shared/__mocks__/bedCase';
+import reviewers from '../../shared/__mocks__/reviewers';
 import facilities from '../../shared/__mocks__/facilities';
 import Wrapper from '../../components/RoomDetail/Wrapper';
 import Carousel from '../../components/Carousel';
@@ -14,6 +15,7 @@ import BedCase from '../../components/RoomDetail/BedCase';
 import Facilities from '../../components/RoomDetail/Facilities';
 import Location from '../../components/RoomDetail/Location';
 import CheckIn from '../../components/RoomDetail/CheckIn';
+import Review from '../../components/RoomDetail/Review';
 
 const RoomDetailContainer = () => {
   return (
@@ -32,6 +34,7 @@ const RoomDetailContainer = () => {
       <Facilities facilities={facilities} />
       <Location />
       <CheckIn />
+      <Review reviewers={reviewers} />
     </>
   );
 };

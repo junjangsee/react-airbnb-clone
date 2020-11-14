@@ -1,0 +1,99 @@
+.review-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    padding: 0 0 22px 0;
+
+    h2 {
+      display: flex;
+      padding: 0 0 8px 0;
+      font-size: 22px;
+      font-weight: 600;
+
+      .star {
+        color: #ff385c;
+      }
+    }
+  }
+
+  .reviews-container {
+    .card-wrapper {
+      position: relative;
+      display: flex;
+      overflow: auto hidden;
+      scroll-snap-type: x mandatory;
+      min-width: 100%;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .card-container {
+        flex: 0 0 89%;
+        max-width: 89%;
+        padding: 0 6px 0 6px;
+        border-width: 0px 6px;
+
+        .card {
+          height: 236px;
+          padding: 16px 16px 16px 16px;
+          scroll-snap-align: start;
+          scroll-snap-stop: always;
+
+          .profile {
+            display: flex;
+            margin: 0 0 12px 0;
+
+            .thumbnail {
+              margin: 0 12px 0 0;
+
+              img {
+                border-radius: 50%;
+              }
+            }
+
+            .info {
+              display: flex;
+              flex-direction: column;
+              font-size: 16px;
+
+              .nickname {
+                font-weight: 600;
+              }
+
+              .date {
+                color: #717171;
+                font-size: 14px;
+              }
+            }
+          }
+
+          .description {
+            p {
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .review-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0 0 0;
+    padding: 13px 23px 13px 23px;
+
+    border: 1px solid rgb(34, 34, 34);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+
+    a {
+      color: rgb(34, 34, 34);
+      text-decoration: none;
+    }
+  }
+}
