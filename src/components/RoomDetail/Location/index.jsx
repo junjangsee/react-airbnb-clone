@@ -11,7 +11,7 @@ const Location = () => {
       <Wrapper className='contents-padding'>
         <Container className={style['location-container']}>
           <Container tag='section' className={style['title']}>
-            <Text tag='h2'>위치 </Text>
+            <Text tag='h2'>위치</Text>
             <Text>송파구, 서울특별시, 한국</Text>
           </Container>
           <Container className={style['map-container']}>

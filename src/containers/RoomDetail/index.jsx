@@ -13,6 +13,7 @@ import Description from '../../components/RoomDetail/Description';
 import BedCase from '../../components/RoomDetail/BedCase';
 import Facilities from '../../components/RoomDetail/Facilities';
 import Location from '../../components/RoomDetail/Location';
+import CheckIn from '../../components/RoomDetail/CheckIn';
 
 const RoomDetailContainer = () => {
   return (
@@ -30,6 +31,7 @@ const RoomDetailContainer = () => {
       <BedCase bedCase={bedCase} />
       <Facilities facilities={facilities} />
       <Location />
+      <CheckIn />
     </>
   );
 };
