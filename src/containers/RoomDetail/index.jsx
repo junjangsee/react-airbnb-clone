@@ -4,6 +4,7 @@ import roomInfos from '../../shared/__mocks__/roomInfos';
 import bedCase from '../../shared/__mocks__/bedCase';
 import reviewers from '../../shared/__mocks__/reviewers';
 import facilities from '../../shared/__mocks__/facilities';
+import host from '../../shared/__mocks__/host';
 import Wrapper from '../../components/RoomDetail/Wrapper';
 import Carousel from '../../components/Carousel';
 import HostInfo from '../../components/RoomDetail/HostInfo';
@@ -16,6 +17,7 @@ import Facilities from '../../components/RoomDetail/Facilities';
 import Location from '../../components/RoomDetail/Location';
 import CheckIn from '../../components/RoomDetail/CheckIn';
 import Review from '../../components/RoomDetail/Review';
+import HostDetail from '../../components/RoomDetail/HostDetail';
 
 const RoomDetailContainer = () => {
   return (
@@ -35,6 +37,7 @@ const RoomDetailContainer = () => {
       <Location />
       <CheckIn />
       <Review reviewers={reviewers} />
+      <HostDetail host={host} />
     </>
   );
 };
