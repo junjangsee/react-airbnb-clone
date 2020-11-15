@@ -4,6 +4,7 @@ import roomInfos from '../../shared/__mocks__/roomInfos';
 import bedCase from '../../shared/__mocks__/bedCase';
 import reviewers from '../../shared/__mocks__/reviewers';
 import facilities from '../../shared/__mocks__/facilities';
+import policies from '../../shared/__mocks__/policies';
 import host from '../../shared/__mocks__/host';
 import Wrapper from '../../components/RoomDetail/Wrapper';
 import Carousel from '../../components/Carousel';
@@ -18,6 +19,7 @@ import Location from '../../components/RoomDetail/Location';
 import CheckIn from '../../components/RoomDetail/CheckIn';
 import Review from '../../components/RoomDetail/Review';
 import HostDetail from '../../components/RoomDetail/HostDetail';
+import Policy from '../../components/RoomDetail/Policy';
 
 const RoomDetailContainer = () => {
   return (
@@ -38,6 +40,7 @@ const RoomDetailContainer = () => {
       <CheckIn />
       <Review reviewers={reviewers} />
       <HostDetail host={host} />
+      <Policy policies={policies} />
     </>
   );
 };
