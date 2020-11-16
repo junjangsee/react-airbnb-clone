@@ -21,6 +21,7 @@ import Review from '../../components/RoomDetail/Review';
 import HostDetail from '../../components/RoomDetail/HostDetail';
 import Policy from '../../components/RoomDetail/Policy';
 import Report from '../../components/RoomDetail/Report';
+import CardDetail from '../../components/RoomDetail/CardDetail';
 
 const RoomDetailContainer = () => {
   return (
