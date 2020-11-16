@@ -1,11 +1,13 @@
 import React from 'react';
-import rooms from '../../shared/__mocks__/rooms';
+import roomsImages from '../../shared/__mocks__/roomsImages';
 import roomInfos from '../../shared/__mocks__/roomInfos';
 import bedCase from '../../shared/__mocks__/bedCase';
 import reviewers from '../../shared/__mocks__/reviewers';
 import facilities from '../../shared/__mocks__/facilities';
 import policies from '../../shared/__mocks__/policies';
 import host from '../../shared/__mocks__/host';
+import roomsInfo from '../../shared/__mocks__/roomsInfo';
+import nearsInfo from '../../shared/__mocks__/nearsInfo';
 import Wrapper from '../../components/RoomDetail/Wrapper';
 import Carousel from '../../components/Carousel';
 import HostInfo from '../../components/RoomDetail/HostInfo';
@@ -21,12 +23,12 @@ import Review from '../../components/RoomDetail/Review';
 import HostDetail from '../../components/RoomDetail/HostDetail';
 import Policy from '../../components/RoomDetail/Policy';
 import Report from '../../components/RoomDetail/Report';
-import CardDetail from '../../components/RoomDetail/CardDetail';
+import NearRoom from '../../components/RoomDetail/NearRoom';
 
 const RoomDetailContainer = () => {
   return (
     <>
-      <Carousel images={rooms} />
+      <Carousel images={roomsImages} />
       <Title />
       <SpecialPrice />
       <HostInfo />
@@ -44,6 +46,7 @@ const RoomDetailContainer = () => {
       <HostDetail host={host} />
       <Policy policies={policies} />
       <Report />
+      <NearRoom roomsInfo={roomsInfo} nearsInfo={nearsInfo} />
     </>
   );
 };

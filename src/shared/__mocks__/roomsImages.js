@@ -1,4 +1,4 @@
-const rooms = [
+const roomsImages = [
   {
     id: 1,
     src:
@@ -16,4 +16,4 @@ const rooms = [
   },
 ];
 
-export default rooms;
+export default roomsImages;

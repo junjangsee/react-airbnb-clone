@@ -4,6 +4,10 @@
   overflow: auto hidden;
   scroll-snap-type: x mandatory;
 
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   .card-detail-room-container {
     padding: 0 6px 0 6px;
     max-width: 70.5%;

@@ -1,0 +1,36 @@
+.separator {
+  margin: -1px 0 0 0;
+  border-top-color: rgb(221, 221, 221);
+  border-top-width: 8px;
+  border-top-style: solid;
+}
+
+.more-room-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    h2 {
+      padding: 0 0 24px 0;
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
+}
+
+.mid-separator {
+  height: 36px;
+}
+
+.near-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    h2 {
+      padding: 0 0 24px 0;
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
+}
