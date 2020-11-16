@@ -8,6 +8,7 @@ import policies from '../../shared/__mocks__/policies';
 import host from '../../shared/__mocks__/host';
 import roomsInfo from '../../shared/__mocks__/roomsInfo';
 import nearsInfo from '../../shared/__mocks__/nearsInfo';
+import areas from '../../shared/__mocks__/areas';
 import Wrapper from '../../components/RoomDetail/Wrapper';
 import Carousel from '../../components/Carousel';
 import HostInfo from '../../components/RoomDetail/HostInfo';
@@ -24,6 +25,7 @@ import HostDetail from '../../components/RoomDetail/HostDetail';
 import Policy from '../../components/RoomDetail/Policy';
 import Report from '../../components/RoomDetail/Report';
 import NearRoom from '../../components/RoomDetail/NearRoom';
+import Option from '../../components/RoomDetail/Option';
 
 const RoomDetailContainer = () => {
   return (
@@ -47,6 +49,7 @@ const RoomDetailContainer = () => {
       <Policy policies={policies} />
       <Report />
       <NearRoom roomsInfo={roomsInfo} nearsInfo={nearsInfo} />
+      <Option areas={areas} />
     </>
   );
 };
