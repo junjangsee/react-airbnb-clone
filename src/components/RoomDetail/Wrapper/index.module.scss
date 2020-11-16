@@ -13,3 +13,15 @@
     }
   }
 }
+
+.wrapper:last-child {
+  .container {
+    .contents {
+      border-bottom: none;
+    }
+
+    .contents-padding {
+      border-bottom: none;
+    }
+  }
+}

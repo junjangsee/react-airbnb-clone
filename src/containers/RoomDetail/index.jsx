@@ -20,6 +20,7 @@ import CheckIn from '../../components/RoomDetail/CheckIn';
 import Review from '../../components/RoomDetail/Review';
 import HostDetail from '../../components/RoomDetail/HostDetail';
 import Policy from '../../components/RoomDetail/Policy';
+import Report from '../../components/RoomDetail/Report';
 
 const RoomDetailContainer = () => {
   return (
@@ -41,6 +42,7 @@ const RoomDetailContainer = () => {
       <Review reviewers={reviewers} />
       <HostDetail host={host} />
       <Policy policies={policies} />
+      <Report />
     </>
   );
 };

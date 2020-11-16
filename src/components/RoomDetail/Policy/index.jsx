@@ -10,19 +10,17 @@ const Policy = ({ policies }) => {
   return (
     <>
       {policies.map((policy, index) => (
-        <>
-          <Wrapper>
-            <Container className={style['policy-container']}>
-              <Container key={index} tag='section' className={style['title']}>
-                <Text tag='h2'>{policy.title}</Text>
-                <Text>{policy.description}</Text>
-              </Container>
-              <Container className={style['detail-image']}>
-                <Image src={detail} width={14} height={14} />
-              </Container>
+        <Wrapper key={index}>
+          <Container className={style['policy-container']}>
+            <Container tag='section' className={style['title']}>
+              <Text tag='h2'>{policy.title}</Text>
+              <Text>{policy.description}</Text>
             </Container>
-          </Wrapper>
-        </>
+            <Container className={style['detail-image']}>
+              <Image src={detail} width={14} height={14} />
+            </Container>
+          </Container>
+        </Wrapper>
       ))}
     </>
   );
