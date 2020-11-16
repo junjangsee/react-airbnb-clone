@@ -1,0 +1,65 @@
+.footer-container {
+  position: fixed;
+  display: flex;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1999;
+  padding: 16px 24px 16px 24px;
+  border-top: 1px solid #dbdbdb;
+  background-color: #fff;
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 52px 0 0;
+
+    .comment {
+      word-break: keep-all;
+      margin: 0 0 3px 0;
+
+      span {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-height: 60px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+
+    .score {
+      span {
+        font-size: 12px;
+      }
+
+      .icon {
+        color: #ff385c;
+      }
+
+      .avg {
+        font-weight: 600;
+      }
+
+      .count {
+        color: #717171;
+      }
+    }
+  }
+
+  .reservation {
+    button {
+      padding: 14px 24px 14px 24px;
+      border-radius: 8px;
+      background-color: rgb(230, 30, 77);
+
+      span {
+        word-break: keep-all;
+        color: #ffffff;
+        font-weight: 600;
+      }
+    }
+  }
+}
