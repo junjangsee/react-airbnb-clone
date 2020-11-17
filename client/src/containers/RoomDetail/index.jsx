@@ -29,8 +29,7 @@ import Option from '../../components/RoomDetail/Option';
 import useHost from '../../hooks/useHost';
 
 const RoomDetailContainer = () => {
-  console.log(useHost());
-  // const host = useHost();
+  const host = useHost();
 
   return (
     <>

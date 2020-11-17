@@ -5,7 +5,8 @@ const host = {
   firstname: '준형',
   lastname: '김',
   joinDate: '2020년 11월',
-  thumbnail: '../public/images/myProfile.jpeg',
+  thumbnail:
+    'https://avatars1.githubusercontent.com/u/45305227?s=460&u=f1c9d9696d789b685a9267447c73488c80e32dc2&v=4',
   isSuperHost: true,
   isAuth: true,
   description:

@@ -65,21 +65,25 @@ const HostDetail = ({ host }) => {
             <Text tag='p'>{description}</Text>
           </Container>
           <Container className={style['explanation-container']}>
-            {explanations.map((explanation, index) => (
-              <Container key={index} className={style['explanation']}>
-                <Text className={style['title']}>{explanation.title}</Text>
-                <Text className={style['description']}>
-                  {explanation.description}
-                </Text>
-              </Container>
-            ))}
+            {explanations
+              ? explanations.map((explanation, index) => (
+                  <Container key={index} className={style['explanation']}>
+                    <Text className={style['title']}>{explanation.title}</Text>
+                    <Text className={style['description']}>
+                      {explanation.description}
+                    </Text>
+                  </Container>
+                ))
+              : null}
           </Container>
           <Container className={style['status-container']}>
-            {statuses.map((status, index) => (
-              <Text key={index} className={style['status']}>
-                {status.title}: {status.result}
-              </Text>
-            ))}
+            {statuses
+              ? statuses.map((status, index) => (
+                  <Text key={index} className={style['status']}>
+                    {status.title}: {status.result}
+                  </Text>
+                ))
+              : null}
           </Container>
           <Container className={style['call-container']}>
             <a href=''>호스트에게 연락하기</a>
