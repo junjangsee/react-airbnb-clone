@@ -1,52 +1,34 @@
+![Airbnb](https://logos-world.net/wp-content/uploads/2020/07/Airbnb-Logo.png)
+
 # 에어비앤비 클론
 
-에어비앤비(Airbnb)의 모바일 버전을 클론합니다.
+![Javascript](https://img.shields.io/badge/javascript-ES6+-yellow?logo=javascript)
+![react](https://img.shields.io/badge/react-17.0.1-9cf?logo=react)
+![NodeJS](https://img.shields.io/badge/node.js-v12.19.0-green?logo=node.js)
+
+[![GitHub Open Issues](https://img.shields.io/github/issues-raw/junjangsee/react-airbnb-clone?color=green)](https://github.com/junjangsee/react-airbnb-clone/issues)
+[![GitHub Closed Issues](https://img.shields.io/github/issues-closed-raw/junjangsee/react-airbnb-clone?color=red)](https://github.com/junjangsee/react-airbnb-clone/issues?q=is%3Aissue+is%3Aclosed)
+[![GitHub Open PR](https://img.shields.io/github/issues-pr-raw/junjangsee/react-airbnb-clone?color=green)](https://github.com/junjangsee/react-airbnb-clone/pulls)
+[![GitHub Closed PR](https://img.shields.io/github/issues-pr-closed-raw/junjangsee/react-airbnb-clone?color=red)](https://github.com/junjangsee/react-airbnb-clone/pulls?q=is%3Apr+is%3Aclosed)
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## 기술 스택
 
-이 프로젝트에 사용된 기술은 다음과 같습니다.
+|      범위       |                                                                                                                                                                                                                                         스택                                                                                                                                                                                                                                         |
+| :-------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|       WEB       |                                             <img src="https://devicon.dev/devicon.git/icons/javascript/javascript-original.svg" alt="javaScript" height="50"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://devicon.dev/devicon.git/icons/nodejs/nodejs-original-wordmark.svg" alt="" height="50"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://devicon.dev/devicon.git/icons/npm/npm-original-wordmark.svg" alt="" height="50"/>                                             |
+|    Front End    | <img src="https://devicon.dev/devicon.git/icons/react/react-original.svg" alt="" height="50"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://devicon.dev/devicon.git/icons/html5/html5-original.svg" alt="" height="50"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://devicon.dev/devicon.git/icons/css3/css3-original.svg" alt="" height="50"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://devicon.dev/devicon.git/icons/sass/sass-original.svg" alt="" height="50"/> |
+|    Back End     |                                                                                                                                                                                     <img src="https://devicon.dev/devicon.git/icons/express/express-original-wordmark.svg" alt="" height="50"/>                                                                                                                                                                                      |
+| Version Control |                                                                                                                                                                                           <img src="https://devicon.dev/devicon.git/icons/github/github-original.svg" alt="" height="50"/>                                                                                                                                                                                           |
 
-- Language: HTML, CSS, SCSS, Javascript
-- Library: React, Classnames, React-Router-Dom
-- Project Setup: CRA(Create-React-App)
-
-## 설치 및 실행
-
-```text
-$ git clone https://github.com/junjangsee/react-airbnb-clone.git
-$ cd react-airbnb-clone
-$ npm i
-$ npm run start
-```
-
-## 프로젝트 구조
+## 프로젝트 구조 🗂
 
 ```text
 .
 +-- .github (깃헙 관련 파일)
 |   +-- PULL_REQUEST_TEMPLATE.md
-+-- public
-|   +-- index.html
-+-- src
-|   +-- components (페이지를 구성하는 컴포넌트 구성)
-|   |   +-- folders (컴포넌트)
-|   |   |   +-- *.jsx
-|   |   +-- *.jsx
-|   +-- containers (페이지 내 데이터를 처리하는 컨테이너 컴포넌트 구성)
-|   |   +-- *.jsx
-|   +-- images (페이지에서 사용되는 이미지들)
-|   +-- pages (라우팅 단위 페이지 구성)
-|   |   +-- *.jsx
-|   +-- shared (프로젝트 종속이 아니라 공통으로 사용되는 파일 구성)
-|   |   +-- __mocks__ (프로젝트에 사용되는 임시 데이터들 모음)
-|   |   |   +-- *.jsx
-|   +-- App.jsx
-|   +-- index.css
-|   +-- index.js
++-- client (프론트)
++-- server (서버)
 .
 ```
-
-## 작업 내용
-
-- [Issues](https://github.com/junjangsee/react-airbnb-clone/issues?q=is%3Aissue+is%3Aclosed)
-- [Pull Requests](https://github.com/junjangsee/react-airbnb-clone/pulls?q=is%3Apr+is%3Aclosed)
