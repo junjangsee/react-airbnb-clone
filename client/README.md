@@ -1,20 +1,12 @@
-# 에어비앤비 클론
+# 에어비앤비 클론 프론트
 
 에어비앤비(Airbnb)의 모바일 버전을 클론합니다.
-
-## 기술 스택
-
-이 프로젝트에 사용된 기술은 다음과 같습니다.
-
-- Language: HTML, CSS, SCSS, Javascript
-- Library: React, Classnames, React-Router-Dom
-- Project Setup: CRA(Create-React-App)
 
 ## 설치 및 실행
 
 ```text
 $ git clone https://github.com/junjangsee/react-airbnb-clone.git
-$ cd react-airbnb-clone
+$ cd client
 $ npm i
 $ npm run start
 ```
@@ -45,8 +37,3 @@ $ npm run start
 |   +-- index.js
 .
 ```
-
-## 작업 내용
-
-- [Issues](https://github.com/junjangsee/react-airbnb-clone/issues?q=is%3Aissue+is%3Aclosed)
-- [Pull Requests](https://github.com/junjangsee/react-airbnb-clone/pulls?q=is%3Apr+is%3Aclosed)
