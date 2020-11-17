@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 
 const host = {
-  id: 1,
   firstname: '준형',
   lastname: '김',
   joinDate: '2020년 11월',
@@ -39,12 +38,6 @@ const host = {
       id: 3,
       title: '응답 시간',
       result: '1시간 이내',
-    },
-  ],
-  rooms: [
-    {
-      id: 1,
-      roomId: 1,
     },
   ],
 };

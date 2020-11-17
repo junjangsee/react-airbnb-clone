@@ -26,8 +26,12 @@ import Policy from '../../components/RoomDetail/Policy';
 import Report from '../../components/RoomDetail/Report';
 import NearRoom from '../../components/RoomDetail/NearRoom';
 import Option from '../../components/RoomDetail/Option';
+import useHost from '../../hooks/useHost';
 
 const RoomDetailContainer = () => {
+  console.log(useHost());
+  // const host = useHost();
+
   return (
     <>
       <Carousel images={roomsImages} />
