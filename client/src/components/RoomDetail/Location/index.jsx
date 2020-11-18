@@ -5,14 +5,20 @@ import Text from '../../Text';
 import Container from '../../Container';
 import Button from '../../Button';
 
-const Location = () => {
+const Location = ({ location }) => {
+  if (!location) {
+    return null;
+  }
+
   return (
     <>
       <Wrapper className='contents-padding'>
         <Container className={style['location-container']}>
           <Container tag='section' className={style['title']}>
             <Text tag='h2'>위치</Text>
-            <Text>송파구, 서울특별시, 한국</Text>
+            <Text>
+              {location.address}, {location.city}, {location.country}
+            </Text>
           </Container>
           <Container className={style['map-container']}>
             <Button className={style['map-btn']}>

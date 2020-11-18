@@ -2,7 +2,7 @@ import React from 'react';
 import Axios from 'axios';
 
 function useRoom() {
-  const [room, setRoom] = React.useState(null);
+  const [room, setRoom] = React.useState([]);
 
   React.useEffect(async () => {
     const response = await Axios.get('http://localhost:8080/room');

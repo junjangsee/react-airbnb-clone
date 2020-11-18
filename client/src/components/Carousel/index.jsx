@@ -31,11 +31,13 @@ const Carousel = ({ className, images }) => {
       <div className={classProps}>
         <div className={style['carousel-container']}>
           <div className={style['carousel']}>
-            {images.map((image, index) => (
-              <div key={index} className={style['image']}>
-                <Image width={document.body.clientWidth} src={image.src} />
-              </div>
-            ))}
+            {images
+              ? images.map((image, index) => (
+                  <div key={index} className={style['image']}>
+                    <Image width={document.body.clientWidth} src={image.src} />
+                  </div>
+                ))
+              : null}
           </div>
         </div>
       </div>

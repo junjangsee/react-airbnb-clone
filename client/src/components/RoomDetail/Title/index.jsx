@@ -5,36 +5,52 @@ import Container from '../../../components/Container';
 import Text from '../../../components/Text';
 import Button from '../../../components/Button';
 
-const Title = ({ className }) => {
+const Title = ({ className, room, host }) => {
+  const { roomTitle, reviewers, location } = room;
+  const { isSuperHost } = host;
   const classProps = classNames(style['title-wrapper'], className);
+
+  const calcReviewScore = () => {
+    const totalScore = reviewers.reduce((acc, currentValue) => {
+      return acc + parseInt(currentValue.score, 10);
+    }, 0);
+
+    return Math.round((totalScore / reviewers.length) * 100) / 100;
+  };
 
   return (
     <Container className={classProps}>
       <Container className={style['title-container']}>
         <Container className={style['titles']}>
           <Container className={style['title']}>
-            <Text tag='h1'>
-              [장기거주환영] Free WiFi / 종합운동장 2분, 잠실새내 5분! 아늑한
-              갬성 하우스
-            </Text>
+            <Text tag='h1'>{roomTitle}</Text>
           </Container>
           <Container className={style['sub-title']}>
-            <Container className={style['star-container']}>
-              <Text className={style['star']}>★</Text>
-              <Button className={style['star-btn']}>
-                <Text className={style['point']}>4.75</Text>&nbsp;
-                <Text className={style['count']}>(12)</Text>
-              </Button>
-            </Container>
-            <Container className={style['medal-container']}>
-              <Text className={style['medal']}>🏅</Text>
-              <Text className={style['host']}>슈퍼호스트</Text>
-            </Container>
-            <Container className={style['location-container']}>
-              <Text className={style['location']}>
-                <a href=''>송파구, 서울특별시, 한국</a>
-              </Text>
-            </Container>
+            {reviewers ? (
+              <Container className={style['star-container']}>
+                <Text className={style['star']}>★</Text>
+                <Button className={style['star-btn']}>
+                  <Text className={style['point']}>{calcReviewScore()}</Text>
+                  &nbsp;
+                  <Text className={style['count']}>({reviewers.length})</Text>
+                </Button>
+              </Container>
+            ) : null}
+            {isSuperHost ? (
+              <Container className={style['medal-container']}>
+                <Text className={style['medal']}>🏅</Text>
+                <Text className={style['host']}>슈퍼호스트</Text>
+              </Container>
+            ) : null}
+            {location ? (
+              <Container className={style['location-container']}>
+                <Text className={style['location']}>
+                  <a href=''>
+                    {location.address}, {location.city}, {location.country}
+                  </a>
+                </Text>
+              </Container>
+            ) : null}
           </Container>
         </Container>
       </Container>

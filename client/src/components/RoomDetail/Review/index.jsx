@@ -7,6 +7,10 @@ import Card from '../../Card';
 import Container from '../../Container';
 
 const Review = ({ reviewers }) => {
+  if (!reviewers) {
+    return null;
+  }
+
   const calcReviewScore = () => {
     const totalScore = reviewers.reduce((acc, currentValue) => {
       return acc + parseInt(currentValue.score, 10);
