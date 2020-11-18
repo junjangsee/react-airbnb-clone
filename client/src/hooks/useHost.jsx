@@ -1,12 +1,14 @@
 import React from 'react';
-import Axios from 'axios';
+import Api from '../apis/Api';
+
+const api = new Api('http://localhost:8080');
 
 function useHost() {
   const [host, setHost] = React.useState({});
 
   React.useEffect(async () => {
-    const response = await Axios.get('http://localhost:8080/host');
-    setHost(response.data);
+    const host = await api.get('/host');
+    setHost(host.data);
   }, []);
 
   return host;

@@ -1,12 +1,14 @@
 import React from 'react';
-import Axios from 'axios';
+import Api from '../apis/Api';
+
+const api = new Api('http://localhost:8080');
 
 function useRoom() {
   const [room, setRoom] = React.useState([]);
 
   React.useEffect(async () => {
-    const response = await Axios.get('http://localhost:8080/room');
-    setRoom(response.data);
+    const room = await api.get('/room');
+    setRoom(room.data);
   }, []);
 
   return room;
