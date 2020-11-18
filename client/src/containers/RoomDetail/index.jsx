@@ -53,7 +53,7 @@ const RoomDetailContainer = () => {
       <Policy policies={policies} />
       <Report />
       <NearRoom roomsInfo={roomsInfo} nearsInfo={nearsInfo} />
-      <Option address={room.location.address} areas={areas} />
+      <Option location={room.location} areas={areas} />
     </>
   );
 };
