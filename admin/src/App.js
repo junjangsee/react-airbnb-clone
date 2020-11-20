@@ -1,7 +1,8 @@
 import './App.css';
+import RoomFormPage from './pages/RoomFormPage';
 
 function App() {
-  return <div className='App'>백오피스</div>;
+  return <RoomFormPage />;
 }
 
 export default App;
