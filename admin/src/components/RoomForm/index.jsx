@@ -20,11 +20,11 @@ const RoomForm = ({ onSubmit }) => {
   };
 
   const handleChange = (event) => {
-    const { name, value, checked } = event.target;
+    const { name, value } = event.target;
 
     setFormData({
       ...formData,
-      [name]: value || checked,
+      [name]: value,
     });
   };
 

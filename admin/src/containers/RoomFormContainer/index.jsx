@@ -1,12 +1,18 @@
 import React from 'react';
+import Api from '../../apis/Api';
 import RoomForm from '../../components/RoomForm';
+
+const api = new Api('http://localhost:8080');
 
 const RoomFormContainer = () => {
   const onSubmit = (formData) => {
-    console.log(formData);
-    // TODO : formData를 POST 요청
-    // TODO : customHook으로 server에서 만든 POST API 데이터로 formData 쏘기
+    postRoomData(formData);
   };
+
+  async function postRoomData(formData) {
+    const response = await api.post('/room', formData);
+    return response.data;
+  }
 
   return <RoomForm onSubmit={onSubmit} />;
 };
