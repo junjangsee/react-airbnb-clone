@@ -2,6 +2,7 @@ import React from 'react';
 import Form from '../Form';
 import Input from '../Input';
 import Label from '../Label';
+import Container from '../Container';
 
 const RoomForm = ({ onSubmit }) => {
   const [formData, setFormData] = React.useState({
@@ -30,7 +31,7 @@ const RoomForm = ({ onSubmit }) => {
 
   return (
     <>
-      <section>
+      <Container tag='section'>
         <Form method='post' onSubmit={handleSubmit}>
           <Label htmlFor='title'>숙소 제목</Label>
           <Input
@@ -80,7 +81,7 @@ const RoomForm = ({ onSubmit }) => {
           <br />
           <Input type='submit' value='저장' />
         </Form>
-      </section>
+      </Container>
     </>
   );
 };
